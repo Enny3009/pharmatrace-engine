@@ -1,0 +1,33 @@
+# Environment & Secrets (NEVER commit)
+.env
+*.env
+!.env.example
+
+# Python Runtime & Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Linters & Typing
+.ruff_cache/
+.mypy_cache/
+
+# Docker Local Volumes & Artifacts
+pgdata/
+redisdata/
+rabbitmqdata/
+miniodata/
+
+# OS Artifacts
+.DS_Store
+Thumbs.db
