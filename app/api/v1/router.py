@@ -1,6 +1,8 @@
 from fastapi import APIRouter
 from app.api.v1 import (
+    audit,
     auth,
+    batches,
     inventory,
     products,
     purchase_orders,
@@ -19,3 +21,5 @@ api_router.include_router(suppliers.router)
 api_router.include_router(purchase_orders.router)
 api_router.include_router(receipts.router)
 api_router.include_router(inventory.router)
+api_router.include_router(batches.router)
+api_router.include_router(audit.router)
