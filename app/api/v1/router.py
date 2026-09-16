@@ -3,11 +3,13 @@ from app.api.v1 import (
     audit,
     auth,
     batches,
+    certificates,
     inventory,
     products,
     purchase_orders,
     receipts,
     suppliers,
+    temperature,
     users,
     warehouses,
 )
@@ -23,3 +25,5 @@ api_router.include_router(receipts.router)
 api_router.include_router(inventory.router)
 api_router.include_router(batches.router)
 api_router.include_router(audit.router)
+api_router.include_router(temperature.router)
+api_router.include_router(certificates.router)
