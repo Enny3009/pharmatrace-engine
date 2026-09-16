@@ -30,4 +30,4 @@ miniodata/
 
 # OS Artifacts
 .DS_Store
-Thumbs.db
+Thumbs.db*.egg-info/
