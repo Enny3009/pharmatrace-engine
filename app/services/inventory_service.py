@@ -141,7 +141,7 @@ class InventoryService:
             # Stock Availability Check
             if inventory.quantity_available < payload.quantity:
                 raise HTTPException(
-                    status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+                    status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
                     detail=(
                         f"Insufficient available stock. Requested: {payload.quantity}, "
                         f"Available: {inventory.quantity_available}."
